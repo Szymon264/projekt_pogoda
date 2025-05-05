@@ -3,6 +3,14 @@
 ## Opis
 Aplikacja służy do sprawdzania prognozy pogody dla miast w Polsce. Pokazuje aktualną pogodę, prognozę godzinową, prognozę na 14 dni oraz generuje wykresy temperatur. Dodatkowo zbiera najnowsze wiadomości z wybranego miasta.
 
+## Funkcjonalności
+- Sprawdzanie aktualnej pogody dla dowolnego miasta w Polsce
+- Prognoza godzinowa
+- Prognoza na 14 dni z wykresem temperatur i opadów
+- Pobieranie lokalnych wiadomości
+- Obsługa polskich znaków w nazwach miast
+- Porównywanie pogody w dwóch miastach (nowa funkcja!)
+
 ## Instrukcja instalacji
 
 ### Krok 1: Instalacja Pythona
@@ -34,13 +42,26 @@ Aplikacja służy do sprawdzania prognozy pogody dla miast w Polsce. Pokazuje ak
 3. Wpisz nazwę miasta (bez polskich znaków) i naciśnij Enter
 
 ## Jak używać
-1. Po uruchomieniu programu wpisz nazwę miasta (np. warszawa, krakow, gdansk)
-2. Program pokaże:
+
+### Podstawowe sprawdzanie pogody
+1. Uruchom program komendą:
+   `python scraper.py`
+2. Wpisz nazwę miasta (możesz użyć polskich znaków, np. "Kraków", "Gdańsk")
+3. Program pokaże:
    - Aktualną pogodę
    - Prognozę godzinową
    - Prognozę na 14 dni
    - Wykres temperatur
    - Lokalne wiadomości z miasta
+
+### Porównywanie pogody w dwóch miastach
+1. Uruchom program porównywania komendą:
+   `python weather_compare.py`
+2. Wpisz nazwy dwóch miast, które chcesz porównać
+3. Program pokaże:
+   - Wykres porównujący temperatury w obu miastach
+   - Statystyki temperatur dla każdego miasta
+   - Różnice temperatur między miastami
 
 ## Rozwiązywanie problemów
 - Jeśli pojawi się błąd z bibliotekami, spróbuj ponownie wykonać krok 3
